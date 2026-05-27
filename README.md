@@ -2,7 +2,7 @@
 
 A Streamlit-based AI agent that audits **any financial dataset** using Claude. Upload a CSV, XLSX, or TXT file — the agent identifies the data type, runs a tailored analysis, and presents findings in a dark, interactive dashboard with downloadable reports.
 
-**[Live Demo →](https://gourimenon8-financial-audit-agent.streamlit.app)**
+**[Live Demo →](https://financial-audit-agent-gm.streamlit.app/)**
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue?style=flat-square)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.35+-red?style=flat-square)
