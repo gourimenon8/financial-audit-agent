@@ -65,31 +65,6 @@ Upload any file (CSV · XLSX · XLS · TXT)
 
 ---
 
-## Architecture
-
-```
-financial-audit-agent/
-├── app.py                              # Streamlit entry point + custom HTML/JS dashboard
-├── cli.py                              # Terminal CLI for bank statement CSVs
-├── src/financial_audit/
-│   ├── parsers/
-│   │   ├── csv_parser.py              # Bank statement normalizer (CLI mode)
-│   │   └── file_loader.py             # Universal loader — any format, large file aggregation
-│   ├── analyzers/
-│   │   ├── flexible_auditor.py        # Schema inspection + flexible audit (web mode)
-│   │   ├── categorizer.py             # Transaction categorization (CLI mode)
-│   │   ├── anomaly.py                 # Anomaly detection (CLI mode)
-│   │   ├── subscriptions.py           # Recurring charge detection (CLI mode)
-│   │   └── summary.py                 # Financial narrative generation (CLI mode)
-│   └── report/
-│       ├── terminal.py                # Rich terminal output
-│       └── markdown_writer.py         # Markdown report writer
-└── sample_data/
-    └── transactions.csv               # Sample bank statement for testing
-```
-
----
-
 ## Installation
 
 **Requirements:** Python 3.11+
